@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation du formulaire</title>
+</head>
+<body>
+    <h1>Inscription a l'atelier de robotique</h1>
+    <form method="post">
+        <fieldset>
+            <legend>Cordonnes</legend>
+            <BR></BR>
+             <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" placeholder="EX. Amine" maxlength="10" minlength="2" required >
+            <BR></BR>
+            <label for="prenom">Prenom:</label>
+            <input type="text" id="prenom" name="prenom" placeholder="EX. BENJHOUD"required >
+            <BR></BR>
+            
+            <label for="Email">Email:</label>
+            <input type="Email" id="Email" name="Email" placeholder="BadrBen@gmail.com" autofocus required>
+            <BR></BR>
+            <label for="tel">tele:</label>
+        <input type="tel" id="tele" name="tele" value="+212" maxlength="14" placeholder="+212600000000" required>
+            </fieldset>
+            <BR></BR>
+        <Fieldset>
+            <legend>Profil</legend>
+            <br><br>
+            <label for="Date naissance">Date naissance :</label>
+            <input type="date" id="Date naissance " name="Date naissance" required  min="18" max="30">
+            <br><br>
+             <p>Niveau :</p>
+
+            <input type="radio" id="deb" name="niveau"
+                value="debutant" checked>
+            <label for="deb">Débutant</label>
+
+            <input type="radio" id="intr" name="niveau"
+                value="intermidiare">
+            <label for="intr">intermidiare</label>
+
+            <input type="radio" id="avc" name="niveau"
+                value="avance">
+            <label for="avc">avance</label>
+            <br><br>
+        </Fieldset>
+        
+        <br><br>
+        <label for="Crenaux">Crenaux</label>
+        <select name="Crenaux" id="Crenaux">
+            <option value="">----Choisir---</option>
+            <option value="le matin" selected>le matin</option>
+            <option value="apres midi"selected>apres midi</option>
+            <option value="le soir"selected>le soir</option>
+            </select>
+        <br><br>
+        <p>Les Languages connues:</p>
+
+        <input type="checkbox" id="c1"
+            name="Languages" value="Arabe" checked>
+        <label for="c1">Arabe</label>
+
+        <input type="checkbox" id="c2"
+            name="Languages" value="Francais" checked>
+        <label for="c2">Francais</label>
+
+        <input type="checkbox" id="c3"
+            name="Languages" value="Englais">
+        <label for="c3">Englais</label>
+        <br><br>
+
+        <label for="Msg">Motivation </label><br>
+        <textarea name="message" id="Msg"rows="5" cols="20,300" placeholder="Ecrire ici... "></textarea>
+        <br><br>
+
+        <p>J'accepte le reglement de l'atelier :</p>
+
+       <input type="radio" id="oui" name="confirme"
+                value="je, confirme ">
+            <label for="oui">je , confirme</label>
+            <br><br>
+        
+        <input type="radio" id="non" name="je confirme pas"
+                value="non , je cofrime pas">
+            <label for="non">non , je confirme pas </label>
+            <br><br>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Efaccer</button>
+
+
+
+            
+    </form>
+    
+</body>
+</html>
